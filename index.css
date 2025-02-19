@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+}
+.container {
+  padding: 50px;
+  background-color: #fafafa;
+  transform-origin: top left;
+}
+.content {
+  margin: 20px 100px;
+}
+
+small {
+  opacity: 0.5;
+}
+
+.discription {
+  padding-bottom: 16px;
+}
+
+.menu {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+.circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: relative;
+  background-color: rgb(255, 121, 121);
+}
+.open {
+  position: absolute;
+  left: 64%;
+  top: 64%;
+  color: white;
+  cursor: pointer;
+}
+.close {
+  position: absolute;
+  left: 34%;
+  top: 71%;
+  color: white;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.showMenu {
+  transform: rotate(-20deg);
+  transition: transform 2s;
+  transition-timing-function: ease;
+}
+.rotateMenu {
+  transform: rotate(-45deg);
+  transition: transform 2s;
+  transition-timing-function: ease;
+}
+.closeMenu {
+  transform: rotate(0deg);
+  transition: transform 2s;
+  transition-timing-function: ease;
+}
+.rotateMenuClose {
+  transform: rotate(0deg);
+  transition: transform 2s;
+  transition-timing-function: ease;
+}
+.listMenu {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  padding-left: 30px;
+}
+.listMenu .animaitionListMenuOpen {
+  transform: translateX(0);
+  transition: transform 1s ease-in;
+}
+.listMenu .animaitionListMenuClose {
+  transform: translateX(-200%);
+  transition: transform 1s ease-in;
+}
+/* .animaitionListMenu{
+    transform: translateX(0);
+    transition: transform 1s ease-in;
+} */
+.listMenu li {
+  list-style-type: none;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+  transform: translateX(-200%);
+}
+.listMenu li:nth-child(2) {
+  margin-left: 15px;
+}
+.listMenu li:nth-child(3) {
+  margin-left: 30px;
+}
+.listMenu li i {
+  padding-right: 4px;
+}
